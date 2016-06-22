@@ -1,8 +1,5 @@
 <?php
 
-// First attempt does not solve the unicode test. Starting to see
-// a pattern with my solutions to these string manipulation
-// questions
 
 function isPangram($string)
 {
@@ -21,6 +18,7 @@ function processString($string)
 {
   $string = trim($string);
   $string = mb_strtolower($string);
+  $string = preg_replace("/[^a-zA-Z]+/", "", $string);  // Strips non ascii chars
   return $string;
 }
 
