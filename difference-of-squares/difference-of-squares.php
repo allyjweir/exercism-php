@@ -2,16 +2,14 @@
 
 function sumOfSquares(int $num)
 {
-    $numbers = range(0, $num);
-    $squares = array_map(function(int $curNum) { return $curNum * $curNum; }, $numbers);
-    $sum = array_reduce($squares, function(int $carry, int $item) { return $carry + $item; }, 0);
-    return $sum;
+    $squares = array_map(function (int $item) { return $item * $item; }, range(0, $num));
+
+    return array_sum($squares);
 }
 
 function squareOfSums(int $num)
 {
-    $sum = array_reduce(range(0, $num), function(int $carry, int $item) { return $carry + $item; }, 0);
-    return $sum * $sum;
+    return array_sum(range(0, $num)) ** 2;
 }
 
 function difference(int $num)
