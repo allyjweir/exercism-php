@@ -21,7 +21,6 @@ class RomanTest extends PHPUnit_Framework_TestCase
 
     public function test4()
     {
-        $this->markTestSkipped();
         $this->assertSame('IV', toRoman(4));
     }
 
@@ -37,7 +36,6 @@ class RomanTest extends PHPUnit_Framework_TestCase
 
     public function test9()
     {
-        $this->markTestSkipped();
         $this->assertSame('IX', toRoman(9));
     }
 
@@ -48,31 +46,26 @@ class RomanTest extends PHPUnit_Framework_TestCase
 
     public function test48()
     {
-        $this->markTestSkipped();
         $this->assertSame('XLVIII', toRoman(48));
     }
 
     public function test49()
     {
-        $this->markTestSkipped();
         $this->assertSame('XLIX', toRoman(49));
     }
 
     public function test59()
     {
-        $this->markTestSkipped();
         $this->assertSame('LIX', toRoman(59));
     }
 
     public function test93()
     {
-        $this->markTestSkipped();
         $this->assertSame('XCIII', toRoman(93));
     }
 
     public function test141()
     {
-        $this->markTestSkipped();
         $this->assertSame('CXLI', toRoman(141));
     }
 
@@ -83,7 +76,6 @@ class RomanTest extends PHPUnit_Framework_TestCase
 
     public function test402()
     {
-        $this->markTestSkipped();
         $this->assertSame('CDII', toRoman(402));
     }
 
@@ -94,25 +86,21 @@ class RomanTest extends PHPUnit_Framework_TestCase
 
     public function test911()
     {
-        $this->markTestSkipped();
         $this->assertSame('CMXI', toRoman(911));
     }
 
     public function test1024()
     {
-        $this->markTestSkipped();
         $this->assertSame('MXXIV', toRoman(1024));
     }
 
     public function test2014()
     {
-        $this->markTestSkipped();
         $this->assertSame('MCMXCVIII', toRoman(1998));
     }
 
     public function test2999()
     {
-        $this->markTestSkipped();
         $this->assertSame('MMCMXCIX', toRoman(2999));
     }
 
