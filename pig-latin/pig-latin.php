@@ -4,13 +4,7 @@ class PigLatin {
 
     public static function translate(string $string) {
         $words = explode(" ", $string);
-        $outputWords = [];
-
-        foreach($words as $word) {
-            $outputWords[] = PigLatin::translateWord($word);
-        }
-
-        return implode(" ", $outputWords);
+        return implode(" ", array_map("PigLatin::translateWord", $words));
     }
 
     public static function translateWord(string $word)
